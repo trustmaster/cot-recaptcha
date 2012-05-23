@@ -20,8 +20,11 @@ Order=10
 
 defined('COT_CODE') or die('Wrong URL.');
 
-$t->assign(array(
-    "USERS_REGISTER_VERIFYIMG" => cot_captcha_generate(),
-));
+if ($cfg['captchamain'] == 'recaptcha')
+{
+	$t->assign(array(
+		"USERS_REGISTER_VERIFYIMG" => cot_captcha_generate(),
+	));
+}
 
 ?>
