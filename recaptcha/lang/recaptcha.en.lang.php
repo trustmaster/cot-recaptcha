@@ -19,8 +19,9 @@ $L['captcha_verification_failed'] = 'Verificaion failed!';
  * Plugin Config
  */
 
-$L['cfg_publickey'] = array('reCaptcha Public key');
-$L['cfg_privatekey'] = array('reCaptcha Private key');
+$L['cfg_publickey'] = array('reCaptcha Public key','change it with key for current domain ('
+.$cfg['mainurl'].'), obtain it <a href="https://www.google.com/recaptcha/admin/list">here</a>');
+$L['cfg_privatekey'] = array('reCaptcha Private key','change it with key for current domain');
 $L['cfg_settings'] = array('var RecaptchaOptions = {...}', "example:<br />lang : 'fr',<br />
 theme : 'white',");
 
