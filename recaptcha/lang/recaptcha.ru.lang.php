@@ -19,8 +19,9 @@ $L['captcha_verification_failed'] = 'Код с картинки введен н�
  * Plugin Config
  */
 
-$L['cfg_publickey'] = array('reCaptcha Public key');
-$L['cfg_privatekey'] = array('reCaptcha Private key');
+$L['cfg_publickey'] = array('reCaptcha публичный (Public) ключ','замените этот ключ своим, актуальным для данного сайта ('
+.$cfg['mainurl'].'). Получить ключ можно <a href="https://www.google.com/recaptcha/admin/list">здесь</a>.');
+$L['cfg_privatekey'] = array('reCaptcha приватный (Private) ключ','замените этот ключ своим, актуальным для данного сайта.');
 $L['cfg_settings'] = array('var RecaptchaOptions = {...}', "пример:<br />lang : 'fr',<br />
 theme : 'white',");
 
